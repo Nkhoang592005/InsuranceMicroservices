@@ -1,0 +1,89 @@
+{
+  "solutionProjects": 29,
+  "dotnetBuild": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "tests": [
+    {
+      "name": "AuthService.Test.EnvironmentTests.HostStartsWithMediatRAndReportsServiceHealth",
+      "outcome": "Passed"
+    },
+    {
+      "name": "ChatService.Test.EnvironmentTests.HostStartsWithMediatRAndReportsServiceHealth",
+      "outcome": "Passed"
+    },
+    {
+      "name": "DashboardService.Test.EnvironmentTests.HostStartsWithMediatRAndReportsServiceHealth",
+      "outcome": "Passed"
+    },
+    {
+      "name": "DocumentService.Test.EnvironmentTests.HostStartsWithMediatRAndReportsServiceHealth",
+      "outcome": "Passed"
+    },
+    {
+      "name": "PaymentService.Test.EnvironmentTests.HostStartsWithMediatRAndReportsServiceHealth",
+      "outcome": "Passed"
+    },
+    {
+      "name": "PolicySearchService.Test.EnvironmentTests.HostStartsWithMediatRAndReportsServiceHealth",
+      "outcome": "Passed"
+    },
+    {
+      "name": "PolicyService.Test.EnvironmentTests.HostStartsWithMediatRAndReportsServiceHealth",
+      "outcome": "Passed"
+    },
+    {
+      "name": "PricingService.Test.EnvironmentTests.HostStartsWithMediatRAndReportsServiceHealth",
+      "outcome": "Passed"
+    },
+    {
+      "name": "ProductService.Test.EnvironmentTests.HostStartsWithMediatRAndReportsServiceHealth",
+      "outcome": "Passed"
+    }
+  ],
+  "backups": [
+    {
+      "file": "lab_netmicro_payments.backup",
+      "bytes": 864,
+      "sha256": "a5951175d3baedfc02a1ed40a8a339628299b8fb5701681342d0be25f54620d6"
+    },
+    {
+      "file": "lab_netmicro_jobs.backup",
+      "bytes": 848,
+      "sha256": "e623cf11a0daf4ba60c729ef336fe8a6a4f3ef7d043061d20ed3e755b11d187c"
+    },
+    {
+      "file": "lab_netmicro_policy.backup",
+      "bytes": 856,
+      "sha256": "87be40a455a844a2a3d96f25f9c2e1f4b3780dca98813d44d5a2f58857e386de"
+    },
+    {
+      "file": "lab_netmicro_pricing.backup",
+      "bytes": 860,
+      "sha256": "fed34fdea3afbea9df3409a6937fded9e8d1cca99f6a7b1a99c193afda21f55e"
+    }
+  ],
+  "backupRestoreVerified": [
+    "payments",
+    "jobs",
+    "policy",
+    "pricing"
+  ],
+  "sqlBackupRestoreVerified": [
+    "payments",
+    "jobs",
+    "policy",
+    "pricing"
+  ],
+  "dockerComposeConfigurationValidated": true,
+  "dockerRuntimeVerified": false,
+  "vueCompilationCompleted": true,
+  "vueBundleSizeWarnings": 2,
+  "vueCliStoppedAfterCompilationOnNode24": false,
+  "vueBuildUsesCompletionWrapper": true,
+  "gatewayUnauthenticatedRequestStatus": 401,
+  "eurekaJarPresent": true,
+  "eurekaRuntimeStatus": 200,
+  "githubPublishedByThisTask": false
+}

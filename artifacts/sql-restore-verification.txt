@@ -1,0 +1,64 @@
+﻿GRANT
+GRANT
+GRANT
+GRANT
+You are now connected to database "lab_netmicro_payments" as user "postgres".
+SET
+SET
+SET
+SET
+SET
+ set_config 
+------------
+ 
+(1 row)
+
+SET
+SET
+SET
+SET
+You are now connected to database "lab_netmicro_jobs" as user "postgres".
+SET
+SET
+SET
+SET
+SET
+ set_config 
+------------
+ 
+(1 row)
+
+SET
+SET
+SET
+SET
+You are now connected to database "lab_netmicro_policy" as user "postgres".
+SET
+SET
+SET
+SET
+SET
+ set_config 
+------------
+ 
+(1 row)
+
+SET
+SET
+SET
+SET
+You are now connected to database "lab_netmicro_pricing" as user "postgres".
+SET
+SET
+SET
+SET
+SET
+ set_config 
+------------
+ 
+(1 row)
+
+SET
+SET
+SET
+SET

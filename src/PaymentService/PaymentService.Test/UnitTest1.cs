@@ -1,10 +1,25 @@
-﻿namespace PaymentService.Test;
+using System.Text.Json;
+using MediatR;
+using Microsoft.AspNetCore.Mvc.Testing;
+using Microsoft.Extensions.DependencyInjection;
 
-public class UnitTest1
+namespace PaymentService.Test;
+
+public class EnvironmentTests : IClassFixture<WebApplicationFactory<Program>>
 {
-    [Fact]
-    public void Test1()
-    {
+    private readonly WebApplicationFactory<Program> factory;
+    public EnvironmentTests(WebApplicationFactory<Program> factory) => this.factory = factory;
 
+    [Fact]
+    public async Task HostStartsWithMediatRAndReportsServiceHealth()
+    {
+        using var client = factory.CreateClient();
+        using var response = await client.GetAsync("/health");
+        response.EnsureSuccessStatusCode();
+        using var body = JsonDocument.Parse(await response.Content.ReadAsStringAsync());
+        Assert.Equal("PaymentService", body.RootElement.GetProperty("service").GetString());
+        Assert.Equal("healthy", body.RootElement.GetProperty("status").GetString());
+        using var scope = factory.Services.CreateScope();
+        Assert.NotNull(scope.ServiceProvider.GetRequiredService<ISender>());
     }
 }

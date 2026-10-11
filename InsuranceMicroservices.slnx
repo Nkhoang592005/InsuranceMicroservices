@@ -33,4 +33,34 @@
     <Project Path="src/ProductService/ProductService.Test/ProductService.Test.csproj" />
     <Project Path="src/ProductService/ProductService/ProductService.csproj" />
   </Folder>
+  <Folder Name="/src/AuthService/">
+    <Project Path="src/AuthService/AuthService.Api/AuthService.Api.csproj" />
+    <Project Path="src/AuthService/AuthService/AuthService.csproj" />
+    <Project Path="src/AuthService/AuthService.Test/AuthService.Test.csproj" />
+  </Folder>
+  <Folder Name="/src/ChatService/">
+    <Project Path="src/ChatService/ChatService.Api/ChatService.Api.csproj" />
+    <Project Path="src/ChatService/ChatService/ChatService.csproj" />
+    <Project Path="src/ChatService/ChatService.Test/ChatService.Test.csproj" />
+  </Folder>
+  <Folder Name="/src/DashboardService/">
+    <Project Path="src/DashboardService/DashboardService.Api/DashboardService.Api.csproj" />
+    <Project Path="src/DashboardService/DashboardService/DashboardService.csproj" />
+    <Project Path="src/DashboardService/DashboardService.Test/DashboardService.Test.csproj" />
+  </Folder>
+  <Folder Name="/BlazorWasmClient/">
+    <Project Path="BlazorWasmClient/BlazorWasmClient/BlazorWasmClient.csproj" />
+  </Folder>
+  <Folder Name="/postgres/">
+    <File Path="postgres/postgres/createdatabases.sql" />
+  </Folder>
+  <Folder Name="/scripts/">
+    <File Path="scripts/scripts/infra.yml" />
+  </Folder>
+  <Folder Name="/Web/">
+    <File Path="Web/Web/package.json" />
+  </Folder>
+  <Folder Name="/eureka-server/">
+    <File Path="eureka-server/eureka-server/build.gradle" />
+  </Folder>
 </Solution>

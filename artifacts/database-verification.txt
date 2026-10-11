@@ -1,0 +1,16 @@
+﻿              datname               |  owner   
+------------------------------------+----------
+ lab_netmicro_jobs                  | lab_user
+ lab_netmicro_jobs_restored         | postgres
+ lab_netmicro_jobs_sql_restored     | postgres
+ lab_netmicro_payments              | lab_user
+ lab_netmicro_payments_restored     | postgres
+ lab_netmicro_payments_sql_restored | postgres
+ lab_netmicro_policy                | lab_user
+ lab_netmicro_policy_restored       | postgres
+ lab_netmicro_policy_sql_restored   | postgres
+ lab_netmicro_pricing               | lab_user
+ lab_netmicro_pricing_restored      | postgres
+ lab_netmicro_pricing_sql_restored  | postgres
+(12 rows)
+

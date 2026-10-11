@@ -91,11 +91,11 @@
 
     [Parameter] public EventCallback<string> ThemeColorChanged { get; set; }
 
-    [Parameter] public string? LayoutType { get; set; }
+    [Parameter] public string LayoutType { get; set; }
 
     [Parameter] public EventCallback<string> LayoutTypeChanged { get; set; }
 
-    [Inject] protected ITextLocalizerService? LocalizationService { get; set; }
+    [Inject] protected ITextLocalizerService LocalizationService { get; set; }
 
-    [CascadingParameter] protected Theme? Theme { get; set; }
+    [CascadingParameter] protected Theme Theme { get; set; }
 }

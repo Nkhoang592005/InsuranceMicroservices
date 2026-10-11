@@ -1,1 +1,4 @@
-docker-compose -f app.yml up -d
+#!/usr/bin/env sh
+set -eu
+cd "$(dirname "$0")"
+docker compose -f app.yml up -d

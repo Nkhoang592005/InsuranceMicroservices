@@ -34,7 +34,7 @@ public class CustomAuthenticationStateProvider : AuthenticationStateProvider
         }
         catch (Exception ex)
         {
-            logger.LogError("Exception in auth state provider", ex);
+            logger.LogError(ex, "Exception in auth state provider");
             return await Task.FromResult(new AuthenticationState(anonymous));
         }
     }
@@ -45,11 +45,11 @@ public class CustomAuthenticationStateProvider : AuthenticationStateProvider
 
         if (userSession != null)
         {
-            var claimsPrinciple = new ClaimsPrincipal(new ClaimsIdentity(new List<Claim>
+            claimsPrincipal = new ClaimsPrincipal(new ClaimsIdentity(new List<Claim>
             {
                 new Claim(ClaimTypes.Name, userSession.UserName),
                 new Claim(ClaimTypes.Role, userSession.Role),
-            }));
+            }, "JwtAuth"));
             await sessionStorageService.SaveItemAsEncrypted("UserSession", userSession);
         }
         else

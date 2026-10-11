@@ -1,2 +1,2 @@
-FROM postgres:11.4
-COPY createdatabases.sql /docker-entrypoint-initdb.d/
+FROM postgres:16
+COPY createdatabases.sql /docker-entrypoint-initdb.d/00-createdatabases.sql

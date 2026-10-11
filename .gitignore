@@ -476,6 +476,13 @@ $RECYCLE.BIN/
 *.msp
 
 # Windows shortcuts
+artifacts/postgres-data/
+.tools/
+eureka-server/eureka-server/.gradle/
+eureka-server/eureka-server/build/
+Web/Web/node_modules/
+Web/Web/dist/
+*.log
 *.lnk
 
 # Vim temporary swap files
