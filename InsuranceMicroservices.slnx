@@ -1,0 +1,36 @@
+<Solution>
+  <Folder Name="/AgentPortalApiGateway/">
+    <Project Path="AgentPortalApiGateway/AgentPortalApiGateway/AgentPortalApiGateway.csproj" />
+  </Folder>
+  <Folder Name="/src/" />
+  <Folder Name="/src/DocumentService/">
+    <Project Path="src/DocumentService/DocumentService.Api/DocumentService.Api.csproj" />
+    <Project Path="src/DocumentService/DocumentService.Test/DocumentService.Test.csproj" />
+    <Project Path="src/DocumentService/DocumentService/DocumentService.csproj" />
+  </Folder>
+  <Folder Name="/src/PaymentService/">
+    <Project Path="src/PaymentService/PaymentService.Api/PaymentService.Api.csproj" />
+    <Project Path="src/PaymentService/PaymentService.Test/PaymentService.Test.csproj" />
+    <Project Path="src/PaymentService/PaymentService/PaymentService.csproj" />
+  </Folder>
+  <Folder Name="/src/PolicySearchService/">
+    <Project Path="src/PolicySearchService/PolicySearchService.Api/PolicySearchService.Api.csproj" />
+    <Project Path="src/PolicySearchService/PolicySearchService.Test/PolicySearchService.Test.csproj" />
+    <Project Path="src/PolicySearchService/PolicySearchService/PolicySearchService.csproj" />
+  </Folder>
+  <Folder Name="/src/PolicyService/">
+    <Project Path="src/PolicyService/PolicyService.Api/PolicyService.Api.csproj" />
+    <Project Path="src/PolicyService/PolicyService.Test/PolicyService.Test.csproj" />
+    <Project Path="src/PolicyService/PolicyService/PolicyService.csproj" />
+  </Folder>
+  <Folder Name="/src/PricingService/">
+    <Project Path="src/PricingService/PricingService.Api/PricingService.Api.csproj" />
+    <Project Path="src/PricingService/PricingService.Test/PricingService.Test.csproj" />
+    <Project Path="src/PricingService/PricingService/PricingService.csproj" />
+  </Folder>
+  <Folder Name="/src/ProductService/">
+    <Project Path="src/ProductService/ProductService.Api/ProductService.Api.csproj" />
+    <Project Path="src/ProductService/ProductService.Test/ProductService.Test.csproj" />
+    <Project Path="src/ProductService/ProductService/ProductService.csproj" />
+  </Folder>
+</Solution>
