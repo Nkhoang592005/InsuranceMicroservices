@@ -1,0 +1,32 @@
+[
+  {
+    "code": "SU001",
+    "customer_code": "CU001",
+    "subject": "Huong dan thanh toan hop dong demo",
+    "ticket_status": "open"
+  },
+  {
+    "code": "SU002",
+    "customer_code": "CU002",
+    "subject": "Huong dan thanh toan hop dong demo",
+    "ticket_status": "open"
+  },
+  {
+    "code": "SU003",
+    "customer_code": "CU003",
+    "subject": "Huong dan thanh toan hop dong demo",
+    "ticket_status": "open"
+  },
+  {
+    "code": "SU004",
+    "customer_code": "CU004",
+    "subject": "Huong dan thanh toan hop dong demo",
+    "ticket_status": "open"
+  },
+  {
+    "code": "SU005",
+    "customer_code": "CU005",
+    "subject": "Huong dan thanh toan hop dong demo",
+    "ticket_status": "open"
+  }
+]

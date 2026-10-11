@@ -1,0 +1,32 @@
+[
+  {
+    "code": "RE001",
+    "report_month": "2026-01-01",
+    "product_code": "PR001",
+    "premium_total": 1200000
+  },
+  {
+    "code": "RE002",
+    "report_month": "2026-01-01",
+    "product_code": "PR002",
+    "premium_total": 2500000
+  },
+  {
+    "code": "RE003",
+    "report_month": "2026-01-01",
+    "product_code": "PR003",
+    "premium_total": 1800000
+  },
+  {
+    "code": "RE004",
+    "report_month": "2026-01-01",
+    "product_code": "PR004",
+    "premium_total": 300000
+  },
+  {
+    "code": "RE005",
+    "report_month": "2026-01-01",
+    "product_code": "PR005",
+    "premium_total": 650000
+  }
+]

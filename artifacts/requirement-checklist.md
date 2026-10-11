@@ -19,3 +19,9 @@ Phạm vi: Phần 2 – Cài đặt môi trường, theo ảnh đề bài ngư�
 | Nộp elearning | Chưa nộp; gói source và backup đã chuẩn bị trong artifacts |
 
 Không coi cấu hình Compose hợp lệ là bằng chứng các container đã chạy. Các mục Docker runtime, GitHub Desktop, publish GitHub, quyền giảng viên và nộp elearning còn chưa hoàn tất.
+
+## Phần mở rộng theo yêu cầu thêm trên 25 thư mục
+
+Đã thêm 18 thư mục module dữ liệu, nâng tổng số thư mục ngoài cùng lên 27 (không tính .git/.tools). Mỗi module có 5 file SQL/JSON/README. CSDL riêng lab_netmicro_demo có 18 bảng với 90 bản ghi giả lập. Đã kiểm tra chạy lại seed không nhân đôi, các quan hệ/ngày hiệu lực/tiền thanh toán/hoa hồng, ràng buộc từ chối dữ liệu sai và restore cả backup custom lẫn SQL vào CSDL mới. Bằng chứng: demo-database-verification.txt, demo-restore-custom.txt, demo-restore-sql.txt.
+
+Các module mở rộng là dữ liệu tham khảo, chưa triển khai endpoint nghiệp vụ hoặc nối backend/frontend. Nằm ngoài phạm vi bắt buộc ban đầu của bài 4. Những thay đổi mở rộng này chưa được push lên GitHub.

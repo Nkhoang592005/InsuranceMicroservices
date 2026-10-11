@@ -63,4 +63,131 @@
   <Folder Name="/eureka-server/">
     <File Path="eureka-server/eureka-server/build.gradle" />
   </Folder>
+  <Folder Name="/DataModules/" />
+  <Folder Name="/DataModules/Customers/">
+    <File Path="Customers/README.md" />
+    <File Path="Customers/schema.sql" />
+    <File Path="Customers/seed.sql" />
+    <File Path="Customers/verify.sql" />
+    <File Path="Customers/sample.json" />
+  </Folder>
+  <Folder Name="/DataModules/Agents/">
+    <File Path="Agents/README.md" />
+    <File Path="Agents/schema.sql" />
+    <File Path="Agents/seed.sql" />
+    <File Path="Agents/verify.sql" />
+    <File Path="Agents/sample.json" />
+  </Folder>
+  <Folder Name="/DataModules/Products/">
+    <File Path="Products/README.md" />
+    <File Path="Products/schema.sql" />
+    <File Path="Products/seed.sql" />
+    <File Path="Products/verify.sql" />
+    <File Path="Products/sample.json" />
+  </Folder>
+  <Folder Name="/DataModules/Quotes/">
+    <File Path="Quotes/README.md" />
+    <File Path="Quotes/schema.sql" />
+    <File Path="Quotes/seed.sql" />
+    <File Path="Quotes/verify.sql" />
+    <File Path="Quotes/sample.json" />
+  </Folder>
+  <Folder Name="/DataModules/Contracts/">
+    <File Path="Contracts/README.md" />
+    <File Path="Contracts/schema.sql" />
+    <File Path="Contracts/seed.sql" />
+    <File Path="Contracts/verify.sql" />
+    <File Path="Contracts/sample.json" />
+  </Folder>
+  <Folder Name="/DataModules/Billing/">
+    <File Path="Billing/README.md" />
+    <File Path="Billing/schema.sql" />
+    <File Path="Billing/seed.sql" />
+    <File Path="Billing/verify.sql" />
+    <File Path="Billing/sample.json" />
+  </Folder>
+  <Folder Name="/DataModules/Payments/">
+    <File Path="Payments/README.md" />
+    <File Path="Payments/schema.sql" />
+    <File Path="Payments/seed.sql" />
+    <File Path="Payments/verify.sql" />
+    <File Path="Payments/sample.json" />
+  </Folder>
+  <Folder Name="/DataModules/Claims/">
+    <File Path="Claims/README.md" />
+    <File Path="Claims/schema.sql" />
+    <File Path="Claims/seed.sql" />
+    <File Path="Claims/verify.sql" />
+    <File Path="Claims/sample.json" />
+  </Folder>
+  <Folder Name="/DataModules/Commissions/">
+    <File Path="Commissions/README.md" />
+    <File Path="Commissions/schema.sql" />
+    <File Path="Commissions/seed.sql" />
+    <File Path="Commissions/verify.sql" />
+    <File Path="Commissions/sample.json" />
+  </Folder>
+  <Folder Name="/DataModules/Renewals/">
+    <File Path="Renewals/README.md" />
+    <File Path="Renewals/schema.sql" />
+    <File Path="Renewals/seed.sql" />
+    <File Path="Renewals/verify.sql" />
+    <File Path="Renewals/sample.json" />
+  </Folder>
+  <Folder Name="/DataModules/Underwriting/">
+    <File Path="Underwriting/README.md" />
+    <File Path="Underwriting/schema.sql" />
+    <File Path="Underwriting/seed.sql" />
+    <File Path="Underwriting/verify.sql" />
+    <File Path="Underwriting/sample.json" />
+  </Folder>
+  <Folder Name="/DataModules/Risk/">
+    <File Path="Risk/README.md" />
+    <File Path="Risk/schema.sql" />
+    <File Path="Risk/seed.sql" />
+    <File Path="Risk/verify.sql" />
+    <File Path="Risk/sample.json" />
+  </Folder>
+  <Folder Name="/DataModules/Notifications/">
+    <File Path="Notifications/README.md" />
+    <File Path="Notifications/schema.sql" />
+    <File Path="Notifications/seed.sql" />
+    <File Path="Notifications/verify.sql" />
+    <File Path="Notifications/sample.json" />
+  </Folder>
+  <Folder Name="/DataModules/Reporting/">
+    <File Path="Reporting/README.md" />
+    <File Path="Reporting/schema.sql" />
+    <File Path="Reporting/seed.sql" />
+    <File Path="Reporting/verify.sql" />
+    <File Path="Reporting/sample.json" />
+  </Folder>
+  <Folder Name="/DataModules/Audit/">
+    <File Path="Audit/README.md" />
+    <File Path="Audit/schema.sql" />
+    <File Path="Audit/seed.sql" />
+    <File Path="Audit/verify.sql" />
+    <File Path="Audit/sample.json" />
+  </Folder>
+  <Folder Name="/DataModules/Identity/">
+    <File Path="Identity/README.md" />
+    <File Path="Identity/schema.sql" />
+    <File Path="Identity/seed.sql" />
+    <File Path="Identity/verify.sql" />
+    <File Path="Identity/sample.json" />
+  </Folder>
+  <Folder Name="/DataModules/Support/">
+    <File Path="Support/README.md" />
+    <File Path="Support/schema.sql" />
+    <File Path="Support/seed.sql" />
+    <File Path="Support/verify.sql" />
+    <File Path="Support/sample.json" />
+  </Folder>
+  <Folder Name="/DataModules/Workflow/">
+    <File Path="Workflow/README.md" />
+    <File Path="Workflow/schema.sql" />
+    <File Path="Workflow/seed.sql" />
+    <File Path="Workflow/verify.sql" />
+    <File Path="Workflow/sample.json" />
+  </Folder>
 </Solution>

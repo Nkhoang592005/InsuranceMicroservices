@@ -1,0 +1,32 @@
+[
+  {
+    "code": "NO001",
+    "customer_code": "CU001",
+    "channel": "portal",
+    "message_body": "Hop dong CO001 da duoc tao (du lieu demo)"
+  },
+  {
+    "code": "NO002",
+    "customer_code": "CU002",
+    "channel": "portal",
+    "message_body": "Hop dong CO002 da duoc tao (du lieu demo)"
+  },
+  {
+    "code": "NO003",
+    "customer_code": "CU003",
+    "channel": "portal",
+    "message_body": "Hop dong CO003 da duoc tao (du lieu demo)"
+  },
+  {
+    "code": "NO004",
+    "customer_code": "CU004",
+    "channel": "portal",
+    "message_body": "Hop dong CO004 da duoc tao (du lieu demo)"
+  },
+  {
+    "code": "NO005",
+    "customer_code": "CU005",
+    "channel": "portal",
+    "message_body": "Hop dong CO005 da duoc tao (du lieu demo)"
+  }
+]

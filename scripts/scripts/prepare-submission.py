@@ -38,6 +38,26 @@ sql_destination = artifacts / 'BaiThucHanh4-backup-sql.zip'
 with ZipFile(sql_destination, 'w', ZIP_DEFLATED) as sql_archive:
     for file in sorted((artifacts / 'backups').glob('*.sql')):
         sql_archive.write(file, file.name)
+demo_destination = artifacts / 'BaiThucHanh4-demo-data.zip'
+demo_modules = sorted(path for path in root.iterdir() if path.is_dir() and (path / 'sample.json').is_file() and (path / 'schema.sql').is_file())
+assert len(demo_modules) == 18, 'Expected 18 complete demo modules.'
+demo_rows = sum(len(json.loads((path / 'sample.json').read_text(encoding='utf-8'))) for path in demo_modules)
+assert demo_rows == 90
+assert (artifacts / 'backups/demo/lab_netmicro_demo.backup').read_bytes().startswith(b'PGDMP')
+for format in ['custom', 'sql']:
+    assert '(18 rows)' in read_log(artifacts / f'demo-restore-{format}.txt'), 'Missing demo restore evidence.'
+with ZipFile(demo_destination, 'w', ZIP_DEFLATED) as archive:
+    for path in demo_modules:
+        for file in path.iterdir():
+            if file.is_file():
+                archive.write(file, file.relative_to(root).as_posix())
+    for file in (artifacts / 'backups/demo').iterdir():
+        if file.is_file():
+            archive.write(file, file.relative_to(root).as_posix())
+    for filename in ['load-demo.sql', 'verify-demo.sql', 'verify-demo-links.sql', 'database-demo.ps1', 'verify-demo-backups.ps1']:
+        archive.write(root / 'scripts/scripts' / filename, f'scripts/scripts/{filename}')
+with ZipFile(demo_destination) as archive:
+    assert archive.testzip() is None
 summary = {
     'solutionProjects': len(ET.parse(root / 'InsuranceMicroservices.slnx').findall('.//Project')),
     'dotnetBuild': {'errors': 0, 'warnings': 0},
@@ -55,6 +75,8 @@ summary = {
     'eurekaJarPresent': (artifacts / 'eureka-server.jar').exists(),
     'eurekaRuntimeStatus': 200 if (artifacts / 'eureka-runtime-verification.txt').exists() else None,
     'githubPublishedByThisTask': False,
+    'demoData': {'modules': len(demo_modules), 'tables': 18, 'syntheticRecords': demo_rows,
+                 'customAndSqlRestoreVerified': True, 'connectedToBackend': False},
 }
 (artifacts / 'validation-summary.json').write_text(json.dumps(summary, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 
@@ -78,6 +100,6 @@ with ZipFile(destination) as archive:
                      'artifacts/validation-summary.json']:
         assert required in archive.namelist(), f'Missing submission file: {required}'
 checksums = '\n'.join(f'{hashlib.sha256(path.read_bytes()).hexdigest()}  {path.name}'
-                      for path in [destination, sql_destination]) + '\n'
+                      for path in [destination, sql_destination, demo_destination]) + '\n'
 (artifacts / 'submission-sha256.txt').write_text(checksums, encoding='utf-8')
 print(json.dumps({'archive': str(destination), 'files': count, 'bytes': destination.stat().st_size, 'testsPassed': len(results), 'backups': len(backups), 'eurekaJar': summary['eurekaJarPresent']}, ensure_ascii=False))

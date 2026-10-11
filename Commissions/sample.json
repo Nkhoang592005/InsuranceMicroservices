@@ -1,0 +1,32 @@
+[
+  {
+    "code": "CO001",
+    "agent_code": "AG001",
+    "contract_code": "CO001",
+    "commission_amount": 72000.0
+  },
+  {
+    "code": "CO002",
+    "agent_code": "AG002",
+    "contract_code": "CO002",
+    "commission_amount": 175000.0
+  },
+  {
+    "code": "CO003",
+    "agent_code": "AG003",
+    "contract_code": "CO003",
+    "commission_amount": 144000.0
+  },
+  {
+    "code": "CO004",
+    "agent_code": "AG004",
+    "contract_code": "CO004",
+    "commission_amount": 27000.0
+  },
+  {
+    "code": "CO005",
+    "agent_code": "AG005",
+    "contract_code": "CO005",
+    "commission_amount": 65000.0
+  }
+]

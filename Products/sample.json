@@ -1,0 +1,32 @@
+[
+  {
+    "code": "PR001",
+    "product_name": "Bao hiem xe",
+    "category": "motor",
+    "base_premium": 1200000
+  },
+  {
+    "code": "PR002",
+    "product_name": "Bao hiem suc khoe",
+    "category": "health",
+    "base_premium": 2500000
+  },
+  {
+    "code": "PR003",
+    "product_name": "Bao hiem nha",
+    "category": "property",
+    "base_premium": 1800000
+  },
+  {
+    "code": "PR004",
+    "product_name": "Bao hiem du lich",
+    "category": "travel",
+    "base_premium": 300000
+  },
+  {
+    "code": "PR005",
+    "product_name": "Bao hiem tai nan",
+    "category": "accident",
+    "base_premium": 650000
+  }
+]

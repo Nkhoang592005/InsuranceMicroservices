@@ -1,0 +1,32 @@
+[
+  {
+    "code": "QU001",
+    "customer_code": "CU001",
+    "product_code": "PR001",
+    "quoted_premium": 1200000
+  },
+  {
+    "code": "QU002",
+    "customer_code": "CU002",
+    "product_code": "PR002",
+    "quoted_premium": 2500000
+  },
+  {
+    "code": "QU003",
+    "customer_code": "CU003",
+    "product_code": "PR003",
+    "quoted_premium": 1800000
+  },
+  {
+    "code": "QU004",
+    "customer_code": "CU004",
+    "product_code": "PR004",
+    "quoted_premium": 300000
+  },
+  {
+    "code": "QU005",
+    "customer_code": "CU005",
+    "product_code": "PR005",
+    "quoted_premium": 650000
+  }
+]

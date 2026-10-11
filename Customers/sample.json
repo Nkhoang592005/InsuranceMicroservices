@@ -1,0 +1,32 @@
+[
+  {
+    "code": "CU001",
+    "full_name": "Khach hang demo 1",
+    "email": "customer1@example.test",
+    "city": "Ha Noi"
+  },
+  {
+    "code": "CU002",
+    "full_name": "Khach hang demo 2",
+    "email": "customer2@example.test",
+    "city": "Ha Noi"
+  },
+  {
+    "code": "CU003",
+    "full_name": "Khach hang demo 3",
+    "email": "customer3@example.test",
+    "city": "Ha Noi"
+  },
+  {
+    "code": "CU004",
+    "full_name": "Khach hang demo 4",
+    "email": "customer4@example.test",
+    "city": "Ha Noi"
+  },
+  {
+    "code": "CU005",
+    "full_name": "Khach hang demo 5",
+    "email": "customer5@example.test",
+    "city": "Ha Noi"
+  }
+]

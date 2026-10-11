@@ -1,0 +1,37 @@
+[
+  {
+    "code": "CO001",
+    "quote_code": "QU001",
+    "agent_code": "AG001",
+    "starts_on": "2026-01-01",
+    "ends_on": "2026-12-31"
+  },
+  {
+    "code": "CO002",
+    "quote_code": "QU002",
+    "agent_code": "AG002",
+    "starts_on": "2026-01-01",
+    "ends_on": "2026-12-31"
+  },
+  {
+    "code": "CO003",
+    "quote_code": "QU003",
+    "agent_code": "AG003",
+    "starts_on": "2026-01-01",
+    "ends_on": "2026-12-31"
+  },
+  {
+    "code": "CO004",
+    "quote_code": "QU004",
+    "agent_code": "AG004",
+    "starts_on": "2026-01-01",
+    "ends_on": "2026-12-31"
+  },
+  {
+    "code": "CO005",
+    "quote_code": "QU005",
+    "agent_code": "AG005",
+    "starts_on": "2026-01-01",
+    "ends_on": "2026-12-31"
+  }
+]

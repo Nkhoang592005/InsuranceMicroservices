@@ -1,0 +1,32 @@
+[
+  {
+    "code": "ID001",
+    "username": "demo_agent_1",
+    "agent_code": "AG001",
+    "role_name": "agent"
+  },
+  {
+    "code": "ID002",
+    "username": "demo_agent_2",
+    "agent_code": "AG002",
+    "role_name": "agent"
+  },
+  {
+    "code": "ID003",
+    "username": "demo_agent_3",
+    "agent_code": "AG003",
+    "role_name": "agent"
+  },
+  {
+    "code": "ID004",
+    "username": "demo_agent_4",
+    "agent_code": "AG004",
+    "role_name": "agent"
+  },
+  {
+    "code": "ID005",
+    "username": "demo_agent_5",
+    "agent_code": "AG005",
+    "role_name": "agent"
+  }
+]

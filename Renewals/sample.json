@@ -1,0 +1,32 @@
+[
+  {
+    "code": "RE001",
+    "contract_code": "CO001",
+    "renewal_on": "2027-01-01",
+    "renewal_premium": 1200000
+  },
+  {
+    "code": "RE002",
+    "contract_code": "CO002",
+    "renewal_on": "2027-01-01",
+    "renewal_premium": 2500000
+  },
+  {
+    "code": "RE003",
+    "contract_code": "CO003",
+    "renewal_on": "2027-01-01",
+    "renewal_premium": 1800000
+  },
+  {
+    "code": "RE004",
+    "contract_code": "CO004",
+    "renewal_on": "2027-01-01",
+    "renewal_premium": 300000
+  },
+  {
+    "code": "RE005",
+    "contract_code": "CO005",
+    "renewal_on": "2027-01-01",
+    "renewal_premium": 650000
+  }
+]

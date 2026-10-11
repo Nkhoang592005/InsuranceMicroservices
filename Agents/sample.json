@@ -1,0 +1,32 @@
+[
+  {
+    "code": "AG001",
+    "full_name": "Dai ly demo 1",
+    "email": "agent1@example.test",
+    "commission_rate": 6
+  },
+  {
+    "code": "AG002",
+    "full_name": "Dai ly demo 2",
+    "email": "agent2@example.test",
+    "commission_rate": 7
+  },
+  {
+    "code": "AG003",
+    "full_name": "Dai ly demo 3",
+    "email": "agent3@example.test",
+    "commission_rate": 8
+  },
+  {
+    "code": "AG004",
+    "full_name": "Dai ly demo 4",
+    "email": "agent4@example.test",
+    "commission_rate": 9
+  },
+  {
+    "code": "AG005",
+    "full_name": "Dai ly demo 5",
+    "email": "agent5@example.test",
+    "commission_rate": 10
+  }
+]

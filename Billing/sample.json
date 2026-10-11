@@ -1,0 +1,32 @@
+[
+  {
+    "code": "BI001",
+    "contract_code": "CO001",
+    "amount_due": 1200000,
+    "due_on": "2026-01-10"
+  },
+  {
+    "code": "BI002",
+    "contract_code": "CO002",
+    "amount_due": 2500000,
+    "due_on": "2026-01-10"
+  },
+  {
+    "code": "BI003",
+    "contract_code": "CO003",
+    "amount_due": 1800000,
+    "due_on": "2026-01-10"
+  },
+  {
+    "code": "BI004",
+    "contract_code": "CO004",
+    "amount_due": 300000,
+    "due_on": "2026-01-10"
+  },
+  {
+    "code": "BI005",
+    "contract_code": "CO005",
+    "amount_due": 650000,
+    "due_on": "2026-01-10"
+  }
+]

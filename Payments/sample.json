@@ -1,0 +1,32 @@
+[
+  {
+    "code": "PA001",
+    "invoice_code": "BI001",
+    "amount_paid": 1200000,
+    "payment_method": "bank_transfer"
+  },
+  {
+    "code": "PA002",
+    "invoice_code": "BI002",
+    "amount_paid": 2500000,
+    "payment_method": "bank_transfer"
+  },
+  {
+    "code": "PA003",
+    "invoice_code": "BI003",
+    "amount_paid": 1800000,
+    "payment_method": "bank_transfer"
+  },
+  {
+    "code": "PA004",
+    "invoice_code": "BI004",
+    "amount_paid": 300000,
+    "payment_method": "bank_transfer"
+  },
+  {
+    "code": "PA005",
+    "invoice_code": "BI005",
+    "amount_paid": 650000,
+    "payment_method": "bank_transfer"
+  }
+]

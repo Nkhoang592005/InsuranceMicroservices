@@ -8,6 +8,25 @@ PDF yêu cầu tạo cấu trúc project, thêm MediatR, cài môi trường, đ
 
 ## Cấu trúc
 
+### Phần mở rộng dữ liệu demo
+
+Repository có **27 thư mục ngoài cùng**: 9 thư mục ban đầu và 18 module dữ liệu bảo hiểm bổ sung. Không tính `.git` hoặc `.tools`. Các module mới xuất hiện trong solution dưới `DataModules` dưới dạng solution items; solution vẫn có 29 project .NET.
+
+18 module: Customers, Agents, Products, Quotes, Contracts, Billing, Payments, Claims, Commissions, Renewals, Underwriting, Risk, Notifications, Reporting, Audit, Identity, Support, Workflow.
+
+Mỗi module có `schema.sql`, `seed.sql`, `verify.sql`, `sample.json` và `README.md`. Tổng cộng 90 file module, 18 bảng và 90 bản ghi giả lập. Các khoản tiền dùng VND. Email dùng `example.test`; không có dữ liệu cá nhân thật. Dữ liệu mô tả 5 hồ sơ khách hàng, báo giá, hợp đồng, thanh toán và các hoạt động liên quan. Liên kết được kiểm tra bằng mã dùng chung giữa các module.
+
+```powershell
+& .\scripts\scripts\database-demo.ps1
+& .\scripts\scripts\verify-demo-backups.ps1
+```
+
+Script tạo/nạp CSDL riêng `lab_netmicro_demo`, không thay đổi 4 CSDL bắt buộc. Tất cả schema và seed chạy trong một transaction; chạy lại giữ các bản ghi đã có, không nhân đôi dữ liệu mẫu. Script kiểm tra quan hệ, ngày hiệu lực, tiền thanh toán và công thức hoa hồng; kiểm tra số âm và ngày đảo bị ràng buộc từ chối.
+
+Backup demo nằm tại `artifacts/backups/demo/lab_netmicro_demo.sql` và `.backup`. Script kiểm chứng restore vào hai CSDL mới có hậu tố ngẫu nhiên, rồi kiểm tra dữ liệu phục hồi mà không nạp lại seed. Có thể dùng `psql -d <database-moi> -v ON_ERROR_STOP=1 -f lab_netmicro_demo.sql` hoặc pgAdmin Restore với `.backup`.
+
+Đây là phần mở rộng dữ liệu, chưa triển khai thêm 18 microservice hoặc kết nối các bảng mới vào frontend/backend. `Identity` chỉ chứa tên tài khoản và vai trò mẫu. Chạy `python scripts/scripts/generate-demo-modules.py` để tái tạo file module từ bộ fixture cố định; lệnh này ghi lại các file mẫu nên không chạy sau khi tự sửa chúng.
+
 - `InsuranceMicroservices.slnx`: 29 project, gồm 9 service × 3 project, Gateway và Blazor.
 - `src/<Service>/<Service>.Api`: thư viện định nghĩa giao tiếp/DTO (`net8.0`, dùng được bởi Blazor gốc và implementation .NET 10).
 - `src/<Service>/<Service>`: ứng dụng ASP.NET Core `net10.0`, đăng ký MediatR và endpoint `/health`.

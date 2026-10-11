@@ -1,0 +1,32 @@
+[
+  {
+    "code": "AU001",
+    "actor_code": "AG001",
+    "action_name": "create_contract",
+    "entity_code": "CO001"
+  },
+  {
+    "code": "AU002",
+    "actor_code": "AG002",
+    "action_name": "create_contract",
+    "entity_code": "CO002"
+  },
+  {
+    "code": "AU003",
+    "actor_code": "AG003",
+    "action_name": "create_contract",
+    "entity_code": "CO003"
+  },
+  {
+    "code": "AU004",
+    "actor_code": "AG004",
+    "action_name": "create_contract",
+    "entity_code": "CO004"
+  },
+  {
+    "code": "AU005",
+    "actor_code": "AG005",
+    "action_name": "create_contract",
+    "entity_code": "CO005"
+  }
+]

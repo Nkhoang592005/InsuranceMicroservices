@@ -1,0 +1,32 @@
+[
+  {
+    "code": "CL001",
+    "contract_code": "CO001",
+    "incident_on": "2026-03-15",
+    "claimed_amount": 100000
+  },
+  {
+    "code": "CL002",
+    "contract_code": "CO002",
+    "incident_on": "2026-03-15",
+    "claimed_amount": 200000
+  },
+  {
+    "code": "CL003",
+    "contract_code": "CO003",
+    "incident_on": "2026-03-15",
+    "claimed_amount": 300000
+  },
+  {
+    "code": "CL004",
+    "contract_code": "CO004",
+    "incident_on": "2026-03-15",
+    "claimed_amount": 400000
+  },
+  {
+    "code": "CL005",
+    "contract_code": "CO005",
+    "incident_on": "2026-03-15",
+    "claimed_amount": 500000
+  }
+]

@@ -85,5 +85,12 @@
   "gatewayUnauthenticatedRequestStatus": 401,
   "eurekaJarPresent": true,
   "eurekaRuntimeStatus": 200,
-  "githubPublishedByThisTask": false
+  "githubPublishedByThisTask": false,
+  "demoData": {
+    "modules": 18,
+    "tables": 18,
+    "syntheticRecords": 90,
+    "customAndSqlRestoreVerified": true,
+    "connectedToBackend": false
+  }
 }

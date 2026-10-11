@@ -488,6 +488,22 @@ Web/Web/dist/
 # Vim temporary swap files
 *.swp
 
+# Publish only demo evidence/backups and current test reports from artifacts.
+!artifacts/
+artifacts/*
+!artifacts/backups/
+artifacts/backups/*
+!artifacts/backups/demo/
+artifacts/backups/demo/*
+!artifacts/backups/demo/lab_netmicro_demo.sql
+!artifacts/backups/demo/lab_netmicro_demo.backup
+!artifacts/demo-database-verification.txt
+!artifacts/demo-restore-custom.txt
+!artifacts/demo-restore-sql.txt
+!artifacts/tests/
+artifacts/tests/*
+!artifacts/tests/*.trx
+
 *.exe
 *.rar
 *.zip
