@@ -515,3 +515,5 @@ obj/
 *.zip
 bin/
 obj/
+
+test_snap.*
