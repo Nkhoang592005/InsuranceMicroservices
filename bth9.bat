@@ -46,11 +46,15 @@ start "ProductService [Port 5030]" cmd /k "title ProductService [Port 5030] && c
 echo 2. Dang mo PolicyService (Cong 5050)...
 start "PolicyService [Port 5050]" cmd /k "title PolicyService [Port 5050] && cd /d \"d:\kiến trúc và thiết kế phần mềm\thực hành\bth4\" && set ASPNETCORE_ENVIRONMENT=Development && dotnet run --project \"src/PolicyService/PolicyService/PolicyService.csproj\" --urls \"http://localhost:5050\""
 
+echo 3. Dang mo BlazorWasmClient (Giao dien Portal Cong 5081)...
+start "BlazorWasmClient [Port 5081]" cmd /k "title BlazorWasmClient [Port 5081] && cd /d \"d:\kiến trúc và thiết kế phần mềm\thực hành\bth4\" && dotnet run --project \"BlazorWasmClient/BlazorWasmClient/BlazorWasmClient.csproj\" --urls \"http://localhost:5081\""
+
 echo.
 echo Dang cho cac service khoi dong (khoang 7 giay)...
 timeout /t 7 /nobreak > nul
 
-echo 3. Dang mo trinh duyet Swagger UI...
+echo 4. Dang mo trinh duyet...
+start http://localhost:5081
 start http://localhost:5030/swagger
 start http://localhost:5050/swagger
 
