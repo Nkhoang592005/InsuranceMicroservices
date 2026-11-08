@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="PolicyService" namespace="PolicyService.Domain">
     <typedef name="PolicyStatus"
              class="NHibernate.Type.EnumStringType`1[[PolicyService.Domain.PolicyStatus, PolicyService]], NHibernate"/>
 
-    <class name="Policy" table="policies">
+    <class name="Policy" table="policies" lazy="false">
         <id name="Id" column="id">
             <generator class="guid.comb"/>
         </id>
@@ -19,7 +19,7 @@
         </bag>
     </class>
 
-    <class name="PolicyVersion" table="policy_versions">
+    <class name="PolicyVersion" table="policy_versions" lazy="false">
         <id name="Id" column="id">
             <generator class="guid.comb"/>
         </id>

@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="PolicyService" namespace="PolicyService.Domain">
     <typedef name="OfferStatus"
              class="NHibernate.Type.EnumStringType`1[[PolicyService.Domain.OfferStatus, PolicyService]], NHibernate"/>
 
-    <class name="Offer" table="offers">
+    <class name="Offer" table="offers" lazy="false">
         <id name="Id" column="id">
             <generator class="guid.comb"/>
         </id>

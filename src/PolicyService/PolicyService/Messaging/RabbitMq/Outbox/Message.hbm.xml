@@ -2,7 +2,7 @@
 <hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="PolicyService"
                    namespace="PolicyService.Messaging.RabbitMq.Outbox">
 
-    <class name="Message" table="outbox_messages">
+    <class name="Message" table="outbox_messages" lazy="false">
         <id name="Id" column="id">
             <generator class="identity"/>
         </id>
